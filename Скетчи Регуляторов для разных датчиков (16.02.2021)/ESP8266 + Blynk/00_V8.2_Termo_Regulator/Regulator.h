@@ -43,8 +43,8 @@ void Regulator(int RegulatorType, // Тип регулятора (HEATER, COOLER
       if (TempIn > TempSet+Delta) {State=LOW;}
     }
     else if(RegulatorType==COOLER){   // Если Тип регулятора Охладитель
-      if (TempIn > TempSet-Delta) {State=HIGH;}
-      if (TempIn < TempSet+Delta) {State=LOW;}
+      if (TempIn > TempSet+Delta) {State=HIGH;}
+      if (TempIn < TempSet-Delta) {State=LOW;}
     }
   }
   // Уровень Логики Реле. Каким сигналом управляется (HIGH/LOW)
